@@ -246,7 +246,7 @@ call <sid>hi('vimfilerOpenedFile',         s:base0D, '',       '',          '')
 call <sid>hi('vimfilerClosedFile',         s:base0D, '',       '',          '')
 
 call <sid>hi('GitGutterAdd',               s:base0B, s:base00, s:bold,      '')
-call <sid>hi('GitGutterChange',            s:base0D, s:base00, s:bold,      '')
+call <sid>hi('GitGutterChange',            s:base0A, s:base00, s:bold,      '')
 call <sid>hi('GitGutterDelete',            s:base08, s:base00, s:bold,      '')
 call <sid>hi('GitGutterChangeDelete',      s:base0E, s:base00, s:bold,      '')
 
