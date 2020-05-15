@@ -11,20 +11,23 @@
   endif
   let g:colors_name="OceanicNext"
 " }}}
+
 " {{{ Italics
   let g:oceanic_next_terminal_italic = get(g:, 'oceanic_next_terminal_italic', 0)
   let s:italic = ""
   if g:oceanic_next_terminal_italic == 1
     let s:italic = "italic"
   endif
-"}}}
+" }}}
+
 " {{{ Bold
   let g:oceanic_next_terminal_bold = get(g:, 'oceanic_next_terminal_bold', 0)
   let s:bold = ""
   if g:oceanic_next_terminal_bold == 1
    let s:bold = "bold"
   endif
-"}}}
+" }}}
+
 " {{{ Colors
   let s:base00=['#1b2b34', '235']
   let s:base01=['#343d46', '237']
@@ -44,8 +47,8 @@
   let s:base0F=['#ab7967', '137']
   let s:base10=['#ffffff', '15']
   let s:none=['NONE', 'NONE']
-
 " }}}
+
 " {{{ Highlight function
 function! <sid>hi(group, fg, bg, attr, attrsp)
   " fg, bg, attr, attrsp
@@ -66,6 +69,7 @@ function! <sid>hi(group, fg, bg, attr, attrsp)
   endif
 endfunction
 " }}}
+
 " {{{ call <sid>:hi(group, fg, bg, gui, guisp)
 call <sid>hi('Bold',                       '',       '',       'bold',      '')
 call <sid>hi('Debug',                      s:base08, '',       '',          '')
@@ -164,7 +168,6 @@ call <sid>hi('cssColor',                   s:base0C, '',       '',          '')
 call <sid>hi('cssBraces',                  s:base05, '',       '',          '')
 call <sid>hi('cssClassName',               s:base0E, '',       '',          '')
 
-
 call <sid>hi('DiffAdd',                    s:base0B, s:base01, 'bold',      '')
 call <sid>hi('DiffChange',                 s:base03, s:base01, '',          '')
 call <sid>hi('DiffDelete',                 s:base08, s:base01, '',          '')
@@ -256,8 +259,6 @@ call <sid>hi('SignifySignDeleteFirstLine', s:base08, s:base00, s:bold,      '')
 call <sid>hi('xmlTag',                     s:base0C, '',       '',          '')
 call <sid>hi('xmlTagName',                 s:base05, '',       '',          '')
 call <sid>hi('xmlEndTag',                  s:base0C, '',       '',          '')
-
-
 " }}}
 
 let g:terminal_color_0=s:base00[0]
@@ -287,3 +288,4 @@ let g:terminal_color_15=s:base05[0]
 let g:terminal_color_background=s:base00[0]
 let g:terminal_color_foreground=s:base10[0]
 
+" vim: fdm=marker fen
