@@ -191,8 +191,11 @@ call <sid>hi('htmlBold',                   s:base0A, '',       '',          '')
 call <sid>hi('htmlItalic',                 s:base0E, '',       '',          '')
 call <sid>hi('htmlTag',                    s:base0C, '',       '',          '')
 call <sid>hi('htmlEndTag',                 s:base0C, '',       '',          '')
-call <sid>hi('htmlArg',                    s:base0A, '',       '',          '')
+call <sid>hi('htmlArg',                    s:base0A, '',       s:italic,    '')
 call <sid>hi('htmlTagName',                s:base07, '',       '',          '')
+
+call <sid>hi('jsxAttrib',                  s:base0A, '',       s:italic,    '')
+call <sid>hi('jsxCloseString',             s:base03, '',       '',          '')
 
 call <sid>hi('javaScript',                 s:base05, '',       '',          '')
 call <sid>hi('javaScriptNumber',           s:base09, '',       '',          '')
