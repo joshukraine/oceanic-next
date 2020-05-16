@@ -47,6 +47,9 @@
   let s:base0F=['#ab7967', '137']
   let s:base10=['#ffffff', '15']
   let s:none=['NONE', 'NONE']
+
+  let s:custom00=['#20343e', '237']
+  let s:custom01=['#314e5d', '240']
 " }}}
 
 " {{{ Highlight function
