@@ -265,6 +265,11 @@ call <sid>hi('SignifySignDeleteFirstLine', s:base08, s:base00, s:bold,      '')
 call <sid>hi('xmlTag',                     s:base0C, '',       '',          '')
 call <sid>hi('xmlTagName',                 s:base05, '',       '',          '')
 call <sid>hi('xmlEndTag',                  s:base0C, '',       '',          '')
+
+call <sid>hi('CocErrorSign',               s:base08, '',       '',          '')
+call <sid>hi('CocWarningSign',             s:base0A, '',       '',          '')
+call <sid>hi('CocInfoSign',                s:base0D, '',       '',          '')
+call <sid>hi('CocHintSign',                s:base09, '',       '',          '')
 " }}}
 
 let g:terminal_color_0=s:base00[0]
